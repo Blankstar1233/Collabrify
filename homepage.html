@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collabrify Interface</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="logo/logo.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="sidebar">
+            <h2>Collabrify</h2>
+            <button class="nav-button "id ="dashBoard">DashBoard</button>
+            <button class="nav-button "id ="quiz" >Quiz</button>
+            <button class="nav-button "id ="team">Team</button>
+            <button class="nav-button "id ="updates">Updates</button>
+            <button class="nav-button "id ="accountSetting">Account Setting</button>
+            <button class="logout-button">Logout</button>
+        </div>
+
+        <div class="main-content">
+            <h1>Home page</h1>
+            <p>This is the home page area. You can add content here based on what needs to be displayed on each page.</p>
+            
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        $(".nav-button").click(function () {
+           var buttonClicked = $(this).attr("id"); 
+           window.location.href="sideButton/"+buttonClicked+".html";
+        });
+    </script>
+</body>
+</html>
