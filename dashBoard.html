@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #FBE4D8;
+            color: #190019;
+        }
+
+        .navbar {
+            background-color: #2B124C;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #FBE4D8 !important;
+        }
+
+        .hero-section {
+            background-color: #DFB6B2;
+            padding: 3rem;
+            text-align: center;
+            color: #190019;
+        }
+
+        .hero-section h1 {
+            color: #190019;
+        }
+
+        .card {
+            background-color: #62255B;
+            color: #FBE4D8;
+        }
+
+        .card-title {
+            color: #854F6C;
+        }
+
+        .section-title {
+            color: #854F6C;
+            margin-bottom: 1.5rem;
+        }
+
+        .announcement {
+            background-color: #854F6C;
+            color: #FBE4D8;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+        }
+
+        .metrics {
+            background-color: #190019;
+            color: #FBE4D8;
+        }
+
+        footer {
+            background-color: #2B124C;
+            color: #FBE4D8;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Student's Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Your Learning </h1>
+        <p>Your academic journey starts here. Stay on track with your courses and progress.</p>
+        <button class="btn btn-dark">Explore Courses</button>
+    </section>
+
+    <!-- Main Content Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Featured Courses Section -->
+            <div class="col-md-6">
+                <h2 class="section-title">Featured Courses</h2>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to AI</h5>
+                        <p class="card-text">Learn the basics of Artificial Intelligence and its real-world applications.</p>
+                        <a href="#" class="btn btn-light">Go to Course</a>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development Bootcamp</h5>
+                        <p class="card-text">Master full-stack web development with hands-on projects.</p>
+                        <a href="#" class="btn btn-light">Go to Course</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Announcements Section -->
+            <div class="col-md-6">
+                
+                <div class="announcement">
+                    <h5>Project Submission Deadline</h5>
+                    <p>The deadline for the Web Development project has been extended to October 15, 2024.</p>
+                </div>
+                <div class="announcement">
+                    <h5>New Course Available: Data Science</h5>
+                    <p>We are excited to introduce a new course on Data Science starting this semester. Enroll now!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Performance Metrics Section -->
+            <div class="col-md-12">
+                <h2 class="section-title">Your Performance</h2>
+                <div class="card metrics">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-dark text-light">Assignments Completed: 12/15</li>
+                            <li class="list-group-item bg-dark text-light">Current GPA: 3.8</li>
+                            <li class="list-group-item bg-dark text-light">Courses Completed: 3/5</li>
+                            <li class="list-group-item bg-dark text-light">Upcoming Deadlines: 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Student Dashboard. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
